@@ -1,0 +1,224 @@
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+}
+#table th {
+  border: 0px;
+  padding: 5px;
+  text-align: left;
+}
+table td {
+  border: 0px;
+  padding: 5px;
+  text-align: left;
+}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table tr:hover {
+  background-color: #ddd;
+}
+table th {
+  padding: 5px 4px;
+  /* font-weight: 900; */
+  text-align: left;
+  background-color: #285f79;
+  color: white;
+}
+table.position thead tr th:first-child .main-content {
+  justify-content: center;
+  text-align: center !important;
+}
+.cell-button {
+  width: 50%;
+  padding: 0px;
+  margin-right: 10px;
+  font-size: 12px;
+  background-color: #00000000;
+  border: none;
+  color: black;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.multi-element {
+  padding: 0px;
+  width: 50%;
+  margin-right: 10px;
+  text-align: left;
+  display: inline-block;
+}
+.multi-element-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: fleft;
+}
+.export-dropdown-container {
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-content: left;
+}
+
+.show-main {
+  display: flex;
+  margin-left: 60%;
+  /* margin-right: auto; */
+  gap: 13px;
+  align-items: center;
+  max-width: 50px;
+  padding-bottom: 12px;
+}
+.show-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #858688;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.show-entries {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #858688;
+  font-family: sans-serif;
+}
+.paginaition-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #858688;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.countig-content {
+  font-family: unset;
+}
+
+select:not([multiple]), input  {
+  border: 1px solid gainsboro;
+  padding: 4px;
+  padding-right: 1.5em;
+  color: #777c85;
+  width: 5rem;
+  border-radius: 5px;
+}
+
+#mySelect {
+  cursor: pointer;
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 57rem;
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+.Box-main {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.Box-content {
+  box-shadow: 0 1.4px 3px rgb(0 0 0 / 0.2);
+  border: 1px solid #ced3db;
+  font-size: 15px;
+  height: 15.7px;
+  width: 18px;
+  align-items: center;
+  font-weight: 900 !important;
+  border-radius: 4px;
+  color: #858688;
+  cursor: pointer;
+  padding: 5px;
+}
+.Box-content:hover {
+  background: #00607b;
+  box-shadow: 0 5.4px 3px rgb(0 0 0 / 0.2);
+  color: white;
+  cursor: pointer;
+}
+.filter-icon svg {
+  font-size: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.position {
+  position: relative;
+}
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-weight: 100;
+}
+.content-space {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border: 2px solid red !important;
+}
+
+/* 1 */
+
+.sorting-btns {
+  display: flex;
+  /* padding-right: 6px; */
+}
+.up-icon {
+  margin-left: 8px;
+  margin-right: 5px;
+}
+.down-icon {
+  margin-right: 5px;
+  margin-left: 8px;
+}
+
+  table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  table tr:hover {background-color: #ddd;}
+  
+  table th {
+    padding: 5px;
+    text-align: left;
+    background-color: #285F79;
+    color: white;
+  }
+
+  .cell-button {
+    width: 100%;
+    font-size: 12px;
+    background-color: #00000000;
+    border: none;
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .multi-element{
+    padding: 0px;
+    width: 50%;
+    margin-right: 10px;
+    text-align: left;
+    display: inline-block;
+  }
+
+  .multi-element-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: fleft
+  }
+
+  .export-dropdown-container {
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+  }

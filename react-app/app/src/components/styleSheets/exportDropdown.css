@@ -1,0 +1,33 @@
+.openExportMenuButton {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    margin: 4px 2px;
+    padding: 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 1px solid #ececec;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0 rgba(204, 204, 204, 0.2), 0 1px 4px 0 rgba(180, 180, 180, 0.19);
+    display:inline-flex;
+    justify-content: space-evenly;
+}
+
+.confirm-export {
+    cursor: 'pointer';
+    width: 90%;
+    height: 30px;
+    background-color: #285F79;
+    color: white;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.confirm-export-container {
+    width: 100%;
+    margin: 0 auto;
+}

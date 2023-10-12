@@ -1,0 +1,19 @@
+
+.editForm-input{
+    width: 50%;
+    height: 45px;
+    background-color: white;
+    border: 1px solid #ababab;
+    border-radius: 8px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.editForm{
+    font-size: 20px;
+    font-weight: lighter;
+    width: 100%;
+    margin-left: 25%;
+    display: table;
+    text-align: left;
+}

@@ -1,0 +1,56 @@
+version: '3.3'
+
+services:
+  api-server:
+    build:
+      context: ./api-server
+      dockerfile: Dockerfile
+    container_name: api-server
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    networks:
+      - app-network 
+    restart: always
+
+  mongo:
+    image: mongo:5.0.5
+    container_name: database
+    logging:
+      driver: none
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin-user
+      MONGO_INITDB_ROOT_PASSWORD: admin-password
+      MONGO_INITDB_DATABASE: stairlicationDB
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongoV:/data/db
+      - ./database/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+    networks:
+      - app-network 
+    restart: always
+
+  react-app:
+    build:
+      context: ./react-app
+      dockerfile: Dockerfile
+    container_name: react-app
+    ports:
+      - "80:80"
+    depends_on:
+      - api-server
+    networks:
+      - app-network   
+    restart: always
+
+networks:
+    app-network:
+        driver: bridge
+
+volumes:
+    mongoV:
+      driver: local
+    web-root:
+      driver: local

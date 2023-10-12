@@ -1,0 +1,42 @@
+{
+  "name": "api-server",
+  "type": "module",
+  "version": "1.1.0",
+  "description": "This is the base framework for a remote server running in node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon src/test.js",
+    "start": "nodemon src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/roometric-web-Framework/server.git"
+  },
+  "author": "roometric GmbH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/roometric-web-Framework/server/issues"
+  },
+  "homepage": "https://gitlab.com/roometric-web-Framework/server#readme",
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "b": "^2.0.1",
+    "babel": "^6.23.0",
+    "body-parser": "^1.19.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "express-json-validator-middleware": "^2.2.1",
+    "flat": "^5.0.2",
+    "formidable": "^2.0.1",
+    "mongodb": "^4.3.0",
+    "pure-uuid": "^1.6.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "nodemon": "^2.0.14",
+    "rimraf": "^3.0.2"
+  }
+}
